@@ -1,0 +1,10 @@
+.env
+venv/
+venv_backup/
+__pycache__/
+*.pyc
+log_simulacion.txt
+terminal_stream.log
+saak-dashboard/node_modules/
+saak-dashboard/dist/
+.DS_Store
