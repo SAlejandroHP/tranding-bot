@@ -12,12 +12,31 @@ export const authService = {
     currentCode = Math.floor(100000 + Math.random() * 900000).toString();
 
     try {
-      const text = `SaaK Dashboard: Código de acceso: ${currentCode}`;
+      const text = `Tu código de verificación es <b>${currentCode}</b>. Por tu seguridad, no lo compartas.`;
+      
+      const reply_markup = {
+        inline_keyboard: [
+          [
+            {
+              text: "📄 Copiar código",
+              copy_text: {
+                text: currentCode
+              }
+            }
+          ]
+        ]
+      };
+
       const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
       const response = await fetch(url, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chat_id: TELEGRAM_CHAT_ID, text: text }),
+        body: JSON.stringify({ 
+          chat_id: TELEGRAM_CHAT_ID, 
+          text: text,
+          parse_mode: 'HTML',
+          reply_markup: reply_markup
+        }),
       });
 
       if (!response.ok) {
