@@ -44,7 +44,7 @@ const Login = ({ step, requestLoginCode, verifyLoginCode, loading, error }) => {
                 </span>
                 <input 
                   type="email" 
-                  placeholder="Email de usuario ('saakhgpv@gmail.com')" 
+                  placeholder="Email de usuario" 
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   required 

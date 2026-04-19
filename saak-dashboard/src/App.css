@@ -700,6 +700,7 @@ input:checked + .slider:before {
   padding: 5rem 5rem 2.5rem 5rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   /* Re-instated the original dashboard panel color per user request, but slightly more transparent for glass effect */
   background: var(--panel-bg);
   backdrop-filter: blur(24px);
