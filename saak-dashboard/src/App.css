@@ -672,3 +672,203 @@ input:checked + .slider:before {
   height: 16px;
   background: rgba(255, 255, 255, 0.1);
 }
+
+
+/* Login Screen */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.login-outer-wrapper {
+  position: relative;
+  width: 600px;
+  height: 480px;
+  margin-top: 50px;
+  /* Glowing drop shadow creates the glassy edge illusion missing when using clip-path */
+  filter: drop-shadow(0 0 2px rgba(16, 185, 129, 0.4)) drop-shadow(0 20px 40px rgba(0,0,0,0.6));
+}
+
+.login-box-shape {
+  width: 100%;
+  height: 100%;
+  padding: 5rem 5rem 2.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  /* Re-instated the original dashboard panel color per user request, but slightly more transparent for glass effect */
+  background: var(--panel-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  /* The completely precise, elegant rounded hexagon path */
+  clip-path: path('M 140 0 L 460 0 Q 480 0 488.9 17.9 L 591.1 222.1 Q 600 240 591.1 257.9 L 488.9 462.1 Q 480 480 460 480 L 140 480 Q 120 480 111 462.1 L 8.9 257.9 Q 0 240 8.9 222.1 L 111 17.9 Q 120 0 140 0 Z');
+}
+
+.login-avatar-wrapper {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  filter: drop-shadow(0 10px 20px rgba(16, 185, 129, 0.4));
+}
+
+.login-avatar-hexagon {
+  width: 80px;
+  height: 80px;
+  background: var(--bg-dark);
+  border: 1px solid var(--accent-green);
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-avatar-hexagon svg {
+  width: 34px;
+  height: 34px;
+  color: var(--accent-green);
+  opacity: 0.9;
+}
+
+.login-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--text-main);
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.login-input-group {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 9999px; /* Mismo efecto pill pero elegante y sin clip-paths afilados */
+  padding: 0.25rem 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.login-input-group:focus-within {
+  box-shadow: 0 0 0 2px var(--accent-green), 0 4px 15px rgba(16, 185, 129, 0.2);
+  background: #ffffff;
+}
+
+.login-icon {
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 0.75rem;
+}
+
+.login-icon svg, .login-icon-right svg {
+  width: 18px;
+  height: 18px;
+}
+
+.login-input-group input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  font-family: inherit;
+  color: #111;
+  font-size: 0.95rem;
+  font-weight: 500;
+  /* Altura equilibrada y sutil */
+  padding: 0.6rem 0;
+  outline: none;
+  width: 100%;
+}
+
+.login-input-group input::placeholder {
+  color: #888;
+  font-weight: 400;
+}
+
+.login-icon-right {
+  color: var(--accent-green);
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding-left: 0.5rem;
+  transition: opacity 0.2s;
+}
+
+.login-icon-right:hover {
+  opacity: 1;
+}
+
+.login-btn {
+  margin-top: 0.75rem;
+  background: var(--accent-green);
+  color: #000;
+  border: none;
+  border-radius: 9999px; /* Cohesión de estilo de píldora moderado */
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0.8rem 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.login-btn:hover {
+  background: #0ea5e9;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 25px rgba(14, 165, 233, 0.4);
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.4rem;
+  padding: 0 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.remember-me:hover {
+  color: var(--text-main);
+}
+
+.remember-me input {
+  accent-color: var(--accent-green);
+  cursor: pointer;
+  width: 14px;
+  height: 14px;
+}
+
+.forgot-password {
+  color: var(--text-muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.forgot-password:hover {
+  color: var(--accent-green);
+}
