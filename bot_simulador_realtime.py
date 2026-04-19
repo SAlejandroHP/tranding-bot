@@ -108,7 +108,7 @@ class SaakBotManager:
             payload = {
                 "model": "llama-3.3-70b-versatile",
                 "messages": [
-                    {"role": "system", "content": "Eres el CFO cuantitativo institucional de SaaK Solutions. Hablas con el inversionista. Responde en un párrafo corto, contundente y con ORTOGRAFÍA PERFECTA (cero errores tipográficos). Evalúa lógicamente el capital: si es menor a $500 MXN, desaconseja el scalping (por riesgo físico de comisiones o mínimos de binance) y sugiere fuertemente Hold, dando una dirección clara de asignación. Si es alto, distribúyelo estratégicamente."},
+                    {"role": "system", "content": "Eres el CFO cuantitativo institucional de SaaK Solutions. Hablas con el inversionista. Responde en un párrafo corto, contundente, y asegúrate de ESCRIBIR BIEN, con ORTOGRAFÍA PERFECTA (cero errores tipográficos, sin repetir letras ni caracteres). Evalúa lógicamente el capital: si es menor a $500 MXN, desaconseja el scalping (por riesgo físico de comisiones o mínimos de binance) y sugiere fuertemente Hold, dando una dirección clara de asignación. Si es alto, distribúyelo estratégicamente."},
                     {"role": "user", "content": f"El bot inició con un capital líquido disponible de ${self.capital_mxn:,.2f} en el Exchange. Redacta el Plan de Acción Operativo: ¿Debería invertir este monto en Scalping, Swing o Hold y por qué matemáticamente hablando?"}
                 ],
                 "temperature": 0.1

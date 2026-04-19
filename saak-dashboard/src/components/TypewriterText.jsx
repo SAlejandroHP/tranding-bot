@@ -6,11 +6,14 @@ export const TypewriterText = ({ text }) => {
   useEffect(() => {
     setDisplayedText('');
     if (!text) return;
+    
+    const chars = Array.from(text);
     let i = 0;
+    
     const intervalId = setInterval(() => {
-      setDisplayedText((prev) => prev + text.charAt(i));
       i++;
-      if (i >= text.length - 1) {
+      setDisplayedText(chars.slice(0, i).join(''));
+      if (i >= chars.length) {
         clearInterval(intervalId);
       }
     }, 15);
