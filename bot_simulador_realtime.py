@@ -61,11 +61,30 @@ class SaakBotManager:
         self._init_balance_and_fees()
         
     def _init_balance_and_fees(self):
-        # Sincronización Primaria: Estrictamente dinámica de cuenta real Bitso sin hardcodes
         try:
             balance = self.exchange.fetch_balance()
-            self.capital_mxn = float(balance.get('MXN', {}).get('free', 0.0))
-            self.ultimo_saldo_bitso_real = self.capital_mxn
+            real_bitso_balance = float(balance.get('MXN', {}).get('free', 0.0))
+            
+            # Consultamos la base de datos para no pisar el saldo virtual si estamos en simulación
+            bs = self.db.get_bot_status()
+            db_balance = 0.0
+            modo_prod = False
+            if bs and bs.data:
+                db_balance = float(bs.data[0].get('mxn_real_balance', 0.0))
+                modo_prod = bs.data[0].get('modo_produccion', False)
+                
+            if modo_prod:
+                # Estricto reflejo de la cuenta física
+                self.capital_mxn = real_bitso_balance
+            else:
+                # En simulación, si Bitso está en ceros pero la BD tiene un saldo virtual guardado, respetamos la BD
+                if real_bitso_balance <= 1.0 and db_balance > 1.0:
+                    self.capital_mxn = db_balance
+                else:
+                    self.capital_mxn = real_bitso_balance
+                    
+            self.ultimo_saldo_bitso_real = real_bitso_balance
+
         except Exception as e:
             print(f"⚠️ Error crítico sincronizando con Exchange: {e}. Usando último estado DB vivo...")
             try:
@@ -132,7 +151,10 @@ class SaakBotManager:
             return None
 
     def start(self):
-        print("Iniciando Bot Simulador Real-Time Multiposición (Arquitectura Multithread)...")
+        print("Iniciando Bot en MODO PRODUCCIÓN (Físico) - Arquitectura Multithread...")
+        
+        # Sincronizamos toda la billetera real (ETH, BTC, etc.) hacia la base de datos para funcionar como Dashboard "Cartera"
+        self._sync_billetera_fisica()
         
         # Sugerencia Viva de Inversión al Arranque (Comentario de CFO)
         self._analisis_capital_inicial_ia()
@@ -143,6 +165,40 @@ class SaakBotManager:
         
         # El subproceso principal evalúa IA
         self.junta_directiva_bucle_lento()
+
+    def _sync_billetera_fisica(self):
+        print("🔄 Reflejando billetera física de Bitso como portafolio...")
+        try:
+            balance = self.exchange.fetch_balance()
+            
+            # Borrar posiciones anteriores y repoblar con las reales (excluyendo lo que tenga 0)
+            self.db.client.table('open_positions').delete().neq('id', 0).execute()
+            
+            for coin, qty in balance['free'].items():
+                if coin != 'MXN' and float(qty) > 0.00000001:
+                    simbolo = f"{coin}/MXN"
+                    try:
+                        ticker = self.exchange.fetch_ticker(simbolo)
+                        precio = ticker['last']
+                    except:
+                        precio = 0.0
+                    
+                    self.db.insert_position({
+                        'simbolo': simbolo,
+                        'cantidad': float(qty),
+                        'precio_entrada': precio,
+                        'estrategia': 'Cartera Física',
+                        'comision_pagada': 0
+                    })
+                    print(f"💰 {simbolo} -> {qty} (Físico sincronizado)")
+                    
+            self.db.upsert_bot_status({
+                'id': 1, 
+                'mxn_real_balance': float(balance.get('MXN', {}).get('free', 0.0)),
+                'modo_produccion': True
+            })
+        except Exception as e:
+            print(f"⚠️ Error sincronizando billetera física: {e}")
 
     def monitoreo_bucle_rapido(self):
         """ Inicializa el loop de eventos asíncrono para WebSockets en el hilo secundario """
@@ -257,7 +313,11 @@ class SaakBotManager:
                                 
                                 tp_limit, sl_limit = 0.05, -0.03 # Por defecto
                                 est_lower = estrategia_pos.lower()
-                                if 'scalping' in est_lower:
+                                if 'física' in est_lower:
+                                    # La Cartera Física la mantenemos solo como monitor visual (No se audita ni vende)
+                                    posiciones_vigentes.append(pos)
+                                    continue
+                                elif 'scalping' in est_lower:
                                     tp_limit, sl_limit = 0.02, -0.02
                                 elif 'swing' in est_lower:
                                     tp_limit, sl_limit = 0.05, -0.03
@@ -380,19 +440,31 @@ class SaakBotManager:
                         self.ultimo_saldo_bitso_real = saldo_real_vivo
                     else:
                         # MODO SIMULACIÓN: Las ventas aumentan capital_mxn virtualmente. 
-                        # Sólo si el salto en Bitso real es > a 1.0 asumimos que el humano depositó físicamente fiat.
+                        # 1. Detección de depósitos físicos reales sumándolos al capital virtual
                         if saldo_real_vivo > getattr(self, 'ultimo_saldo_bitso_real', -1.0):
                             if getattr(self, 'ultimo_saldo_bitso_real', -1.0) != -1.0:
                                 inyeccion_nueva = saldo_real_vivo - self.ultimo_saldo_bitso_real
                                 if inyeccion_nueva > 1.0:
                                     self.capital_mxn += inyeccion_nueva
                                     self.ultimo_saldo_bitso_real = saldo_real_vivo
-                                    print(f"\n💰 [SYSTEM] ¡Inyección externa simulada detectada! +${inyeccion_nueva:,.2f} MXN.")
+                                    print(f"\n💰 [SYSTEM] ¡Inyección externa (Bitso) simulada detectada! +${inyeccion_nueva:,.2f} MXN.")
                                     self._analisis_capital_inicial_ia()
                             else:
                                 self.ultimo_saldo_bitso_real = saldo_real_vivo
                         else:
                             self.ultimo_saldo_bitso_real = saldo_real_vivo
+
+                        # 2. Detección de inyecciones simuladas desde el Frontend (NavIsland Modal)
+                        if bs and bs.data:
+                            db_balance = float(bs.data[0].get('mxn_real_balance', 0.0))
+                            if db_balance > (self.capital_mxn + 1.0):
+                                inyeccion_virtual = db_balance - self.capital_mxn
+                                self.capital_mxn = db_balance
+                                print(f"\n🚀 [UI] ¡Inyección Virtual desde Dashboard detectada! +${inyeccion_virtual:,.2f} MXN.")
+                                self._analisis_capital_inicial_ia()
+                                
+                                # Rompemos la pausa de 15 minutos de inactividad para que la IA actúe de inmediato con el nuevo capital
+                                self.estrategia_activa = "FORZAR_RECALCULO_VIRTUAL" # Hack ligero para romper el sleep si estuviera en él
                 except Exception:
                     pass
 
@@ -504,47 +576,78 @@ class SaakBotManager:
                     
                     # Caza de usuario dashboard
                     if ids_in:
-                        print("⏳ Propuesta pendiente en Dashboard. Tienes 10 mins para decidir...")
-                        aprobado = None
                         estrategia_al_proponer = self.estrategia_activa
                         
-                        # Loop de 600 segundos (10 mins), chequeos activos cada segundo
-                        for ciclo in range(600):
-                            # Salida INMEDIATA si cambian la estrategia
-                            if self.estrategia_activa != estrategia_al_proponer:
-                                print(f"🚨 Abortando propuesta obsoleta. Estrategia cambió de {estrategia_al_proponer} a {self.estrategia_activa}")
-                                self.db.update_proposals_status(ids_in, 'rechazada')
-                                break
+                        # Si es Scalping o Swing, no hay tiempo que perder. Auto-aprobación del bot para autonomía.
+                        if estrategia_al_proponer.lower() in ['scalping', 'swing']:
+                            print(f"⚡ Estrategia {estrategia_al_proponer} detectada. Auto-aprobando propuesta para no perder la oportunidad de mercado...")
+                            try:
+                                self.db.update_proposals_status(ids_in, 'aprobada')
+                                res_props = self.db.get_trade_proposals(ids_in)
+                                if res_props and res_props.data:
+                                    aprobado = res_props.data[0]
+                                    self._ejecutar_compra(aprobado)
+                            except Exception as e:
+                                print(f"⚠️ Error auto-aprobando propuesta: {e}")
+                        else:
+                            print("⏳ Propuesta pendiente (Hold). Tienes 10 mins para decidir en el Dashboard...")
+                            aprobado = None
+                            
+                            # Loop de 600 segundos (10 mins), chequeos activos cada segundo
+                            for ciclo in range(600):
+                                # Salida INMEDIATA si cambian la estrategia
+                                if self.estrategia_activa != estrategia_al_proponer:
+                                    print(f"🚨 Abortando propuesta obsoleta. Estrategia cambió de {estrategia_al_proponer} a {self.estrategia_activa}")
+                                    self.db.update_proposals_status(ids_in, 'rechazada')
+                                    break
+                                    
+                                time.sleep(1)
                                 
-                            time.sleep(1)
-                            
-                            # Solo consultamos Supabase cada 5 segundos para no saturar la red
-                            if ciclo % 5 == 0:
-                                try:
-                                    res_props = self.db.get_trade_proposals(ids_in)
-                                    if res_props and res_props.data:
-                                        todos_listos = True
-                                        for r in res_props.data:
-                                            if r['status'] == 'aprobada':
-                                                aprobado = r
-                                                break
-                                            if r['status'] == 'pendiente': todos_listos = False
-                                        if aprobado or todos_listos: break
-                                except: pass
-                            
-                        if aprobado:
-                            self._ejecutar_compra(aprobado)
-                            rechazar_resto = [i for i in ids_in if i != aprobado['id']]
-                            if rechazar_resto: self.db.update_proposals_status(rechazar_resto, 'rechazada')
-                        elif self.estrategia_activa == estrategia_al_proponer:
-                            print("⏭️ Tiempo Agotado o Propuesta Rechazada por el Usuario.")
-                            self.db.update_proposals_status(ids_in, 'rechazada')
+                                # Solo consultamos Supabase cada 5 segundos para no saturar la red
+                                if ciclo % 5 == 0:
+                                    try:
+                                        res_props = self.db.get_trade_proposals(ids_in)
+                                        if res_props and res_props.data:
+                                            todos_listos = True
+                                            for r in res_props.data:
+                                                if r['status'] == 'aprobada':
+                                                    aprobado = r
+                                                    break
+                                                if r['status'] == 'pendiente': todos_listos = False
+                                            if aprobado or todos_listos: break
+                                    except: pass
+                                
+                            if aprobado:
+                                self._ejecutar_compra(aprobado)
+                                rechazar_resto = [i for i in ids_in if i != aprobado['id']]
+                                if rechazar_resto: self.db.update_proposals_status(rechazar_resto, 'rechazada')
+                            elif self.estrategia_activa == estrategia_al_proponer:
+                                print("⏭️ Tiempo Agotado o Propuesta Rechazada por el Usuario.")
+                                self.db.update_proposals_status(ids_in, 'rechazada')
 
             print("💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)")
             estrategia_actual_loop = self.estrategia_activa
             for _ in range(15 * 60):
+                # Polling para ordenes manuales (Quick Hold)
+                if _ % 5 == 0:
+                    try:
+                        res_manual = self.db.client.table('trade_proposals').select('*').eq('status', 'orden_manual').execute()
+                        if res_manual and res_manual.data:
+                            for orden in res_manual.data:
+                                self.db.update_proposals_status([orden['id']], 'ejecutando')
+                                print(f"🚀 [UI TRIGGER] Ejecutando orden manual dictada por el usuario: {orden['simbolo']}")
+                                self._ejecutar_compra(orden)
+                                self.db.update_proposals_status([orden['id']], 'aprobada')
+                    except Exception as e:
+                        pass
+
                 if self.estrategia_activa != estrategia_actual_loop:
-                    print(f"🔄 Interrupción Activa: Detectado cambio de estrategia en UI a '{self.estrategia_activa}'. Despertando CFO!")
+                    if self.estrategia_activa == "FORZAR_RECALCULO_VIRTUAL":
+                        res_s = self.db.get_bot_status()
+                        self.estrategia_activa = res_s.data[0].get('estrategia_activa', 'Swing') if res_s and res_s.data else 'Swing'
+                        print("⚡ Forzando recálculo estructural inmediato por inyección de liquidez UI...")
+                    else:
+                        print(f"🔄 Interrupción Activa: Detectado cambio de estrategia en UI a '{self.estrategia_activa}'. Despertando CFO!")
                     break
                 time.sleep(1)
 
@@ -575,15 +678,35 @@ class SaakBotManager:
             except Exception as e:
                 print(f"Error rescatando Yield: {e}")
 
-            # Fragmentamos inversiones (Mantenemos fondos libres si hay excedente)
-            monto_base = min(self.capital_mxn, 1000.0) 
+            # Identificar Presupuesto de Inversión (User Override via JSON in decision_usuario)
+            presupuesto_user = 1000.0
+            try:
+                bs = self.db.get_bot_status()
+                if bs and bs.data:
+                    info_usr = bs.data[0].get('decision_usuario')
+                    if info_usr:
+                        config = json.loads(info_usr)
+                        presupuesto_user = float(config.get('presupuestos', {}).get(estrategia.upper(), 1000.0))
+                        
+                    # Si es una orden manual, el monto pudo venir embebido en proyeccion "Monto Asignado: X"
+                    if "Monto Asignado:" in propuesta.get('proyeccion', ''):
+                        import re
+                        m = re.search(r'Monto Asignado:\s*([\d\.]+)', propuesta['proyeccion'])
+                        if m: presupuesto_user = float(m.group(1))
+            except Exception as e:
+                print(f"Error leyendo config usuario: {e}")
+
+            monto_base = min(self.capital_mxn, float(presupuesto_user))
+            
             # Colchón de seguridad del 2% para evitar "Insufficient MXN" de comisiones Bitso si invertimos todo el saldo
             if (self.capital_mxn - monto_base) < (monto_base * 0.05):
                 monto_invertir = monto_base * 0.98
             else:
                 monto_invertir = monto_base
                 
-            if monto_invertir < 20: return 
+            if monto_invertir < 20: 
+                print(f"⚠️ Operación abortada: Monto final a invertir (${monto_invertir}) menor al mínimo permitido ($20 MXN)")
+                return 
             
         # Determinar si estamos operando en vivo (Producción)
         modo_produccion = False

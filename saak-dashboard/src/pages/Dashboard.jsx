@@ -196,6 +196,55 @@ const Dashboard = ({ onLogout }) => {
     } catch (err) { console.error(err); } finally { setLoadingConfig(false); }
   };
 
+  const [holdForm, setHoldForm] = useState({coin: 'BTC', amount: ''});
+  const [presupuestoLocal, setPresupuestoLocal] = useState('');
+
+  // Efecto para sincronizar el presupuesto local si ya viene configurado
+  useEffect(() => {
+     if (botStatus && botStatus.decision_usuario) {
+         try {
+             const dec = JSON.parse(botStatus.decision_usuario);
+             const est = botStatus.estrategia_activa || 'Swing';
+             const p = dec.presupuestos?.[est.toUpperCase()];
+             if (p) setPresupuestoLocal(p.toString());
+         } catch(e) {}
+     }
+  }, [botStatus?.estrategia_activa, botStatus?.decision_usuario]);
+
+  const actualizarPresupuesto = async (nuevoMonto) => {
+      setPresupuestoLocal(nuevoMonto);
+      if (!nuevoMonto || isNaN(nuevoMonto)) return;
+      const amount = parseFloat(nuevoMonto);
+      const est = (botStatus?.estrategia_activa || 'Swing').toUpperCase();
+      
+      let dec = {};
+      try { if (botStatus?.decision_usuario) dec = JSON.parse(botStatus.decision_usuario); } catch(e) {}
+      
+      dec.presupuestos = dec.presupuestos || {};
+      dec.presupuestos[est] = amount;
+      
+      await supabase.from('bot_status').update({ decision_usuario: JSON.stringify(dec) }).eq('id', 1);
+  };
+
+  const ejecutarHoldManual = async () => {
+     const amt = parseFloat(holdForm.amount);
+     if (isNaN(amt) || amt <= 0) return;
+     try {
+         await supabase.from('trade_proposals').insert({
+             simbolo: `${holdForm.coin}/MXN`,
+             estrategia: 'Hold',
+             status: 'orden_manual',
+             proyeccion: `Inversión Manual HOLD - Monto Asignado: ${amt}`,
+             probabilidad: 100,
+             precio_entrada: 0.0
+         });
+         setHoldForm({...holdForm, amount: ''});
+         playPing();
+     } catch (e) {
+         console.error("Error order manual Hold", e);
+     }
+  };
+
   return (
     <MainLayout isOnline={isOnline} onLogout={onLogout}>
       {showProdModal && (
@@ -336,6 +385,32 @@ const Dashboard = ({ onLogout }) => {
                          </div>
                       );
                    })()}
+                </div>
+              )}
+
+              {botStatus?.estrategia_activa?.toUpperCase() === 'HOLD' ? (
+                <div className="hold-manual-form" style={{ marginTop: '0.75rem', padding: '0.75rem', background: 'rgba(0,0,0,0.3)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Inversión Directa (Hold)</div>
+                  <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem' }}>
+                    <select value={holdForm.coin} onChange={(e) => setHoldForm({...holdForm, coin: e.target.value})} style={{ flex: 1, padding: '0.5rem', borderRadius: '4px', background: 'rgba(0,0,0,0.5)', color: '#fff', border: '1px solid var(--border-color)' }}>
+                       <option value="BTC">BTC</option>
+                       <option value="ETH">ETH</option>
+                       <option value="XRP">XRP</option>
+                       <option value="SOL">SOL</option>
+                       <option value="DOGE">DOGE</option>
+                    </select>
+                    <input type="number" placeholder="Monto MXN" value={holdForm.amount} onChange={(e) => setHoldForm({...holdForm, amount: e.target.value})} style={{ flex: 1, padding: '0.5rem', borderRadius: '4px', background: 'rgba(0,0,0,0.5)', color: '#fff', border: '1px solid var(--border-color)' }} />
+                  </div>
+                  <button onClick={ejecutarHoldManual} style={{ width: '100%', padding: '0.5rem', background: 'var(--accent-blue)', color: '#000', fontWeight: 'bold', border: 'none', borderRadius: '4px', cursor: 'pointer' }}>Comprar / Ejecutar Hold</button>
+                </div>
+              ) : (
+                <div className="budget-form" style={{ marginTop: '0.75rem', padding: '0.75rem', background: 'rgba(0,0,0,0.3)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <div style={{ fontSize: '0.7rem', color: 'var(--text-muted)', marginBottom: '0.5rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Presupuesto Asignado por Trade</div>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    <span style={{color: 'var(--text-muted)'}}>$</span>
+                    <input type="number" value={presupuestoLocal} onChange={(e) => setPresupuestoLocal(e.target.value)} onBlur={(e) => actualizarPresupuesto(e.target.value)} style={{ flex: 1, padding: '0.5rem', borderRadius: '4px', background: 'rgba(0,0,0,0.5)', color: '#fff', border: '1px solid var(--border-color)', fontSize: '1rem', fontFamily: '"JetBrains Mono", monospace' }} placeholder="Monto exacto..." />
+                    <span style={{color: 'var(--text-muted)'}}>MXN</span>
+                  </div>
                 </div>
               )}
               
