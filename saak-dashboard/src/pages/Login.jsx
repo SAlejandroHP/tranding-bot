@@ -26,7 +26,7 @@ const Login = ({ step, requestLoginCode, verifyLoginCode, loading, error }) => {
         </div>
         
         <div className="login-box-shape">
-          <h2 className="login-title">Sign In</h2>
+          <h2 className="login-title">Iniciar Sesión</h2>
           
           <form className="login-form" onSubmit={handleSubmit}>
             {error && (
@@ -60,10 +60,12 @@ const Login = ({ step, requestLoginCode, verifyLoginCode, loading, error }) => {
                 </span>
                 <input 
                   type="text" 
-                  placeholder="Código de Telegram" 
+                  placeholder="Código de seguridad" 
                   value={code}
-                  onChange={(e) => setCode(e.target.value)}
+                  onChange={(e) => setCode(e.target.value.replace(/\D/g, ''))}
                   required 
+                  autoComplete="one-time-code"
+                  style={{ letterSpacing: '4px', textAlign: 'center', fontSize: '1.2rem', fontWeight: 'bold' }}
                 />
               </div>
             )}
@@ -74,7 +76,7 @@ const Login = ({ step, requestLoginCode, verifyLoginCode, loading, error }) => {
             
             {step === 2 && (
               <div className="login-options" style={{justifyContent: 'center', marginTop: '1rem'}}>
-                 <span style={{fontSize: '0.8rem', color: 'var(--text-muted)'}}>Revisa tu Telegram para el código de acceso</span>
+                 <span style={{fontSize: '0.8rem', color: 'var(--text-muted)'}}>Revisa tu buzón de correo para ingresar el código</span>
               </div>
             )}
           </form>

@@ -1,0 +1,1370 @@
+✅ Fee dinámico resuelto: 0.780%
+💰 Capital Liquido Inicial (Sincronizado Bitso): $95.35 MXN
+Iniciando Bot Simulador Real-Time Multiposición (Arquitectura Multithread)...
+🧠 Consultando a IA (Llama 3.3 70B CFO) sobre sugerencia de diversificación inicial para $95.35 MXN disponibles...
+✅ Mandato CFO: Considerando el capital líquido disponible de $95.35, desaconsejo el scalping debido a que el monto es menor a $500 MXN, lo que implica un riesgo significativo de comisiones y mínimos de operación en la plataforma de Binance. En su lugar, sugiero adoptar una estrategia de Hold, asignando el capital de manera conservadora para minimizar las pérdidas potenciales. Matemáticamente, el costo de las comisiones y los mínimos de operación puede consumir una parte sustancial del capital, lo que reduce la rentabilidad potencial. Por lo tanto, es más prudente mantener una posición de Hold y esperar a que el capital crezca antes de considerar estrategias más agresivas como el scalping o el swing.
+🌐 [WS] Conectado a Bitso WebSocket para monitoreo milimétrico
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Scalping)
+✅ SOL/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ LTC/MXN SUPERÓ filtros técnicos: ['Incremento inusual de volumen']
+✅ AVAX/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ MANA/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ BTC/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ TRX/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ BAT/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ ETH/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ XRP/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ BCH/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+🤖 Despertando IA (CrewAI) para análisis cualitativo final de: ['SOL/MXN', 'LTC/MXN', 'AVAX/MXN', 'MANA/MXN', 'BTC/MXN', 'TRX/MXN', 'BAT/MXN', 'ETH/MXN', 'XRP/MXN', 'BCH/MXN']
+🚀 Iniciando sesión de la Junta Directiva de SaaK Solutions (Estrategia: Hold)...
+╭─────────────────────────── Crew Execution Started ───────────────────────────╮
+│                                                                              │
+│  Crew Execution Started                                                      │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Task: Estrategia: Hold. Activos pre-filtrados (cuantitativamente            │
+│  aprobados): {'SOL/MXN': 'Precio: 1455.44 | Puntaje Técnico: 1 | RSI: 32.74  │
+│  | Confirmaciones: RSI en zona de sobreventa (<40)', 'LTC/MXN': 'Precio:     │
+│  939.9 | Puntaje Técnico: 1 | RSI: 40.82 | Confirmaciones: Incremento        │
+│  inusual de volumen', 'AVAX/MXN': 'Precio: 156.56 | Puntaje Técnico: 1 |     │
+│  RSI: 1.57 | Confirmaciones: RSI en zona de sobreventa (<40)', 'MANA/MXN':   │
+│  'Precio: 1.56 | Puntaje Técnico: 1 | RSI: 28.21 | Confirmaciones: RSI en    │
+│  zona de sobreventa (<40)', 'BTC/MXN': 'Precio: 1286050.0 | Puntaje          │
+│  Técnico: 1 | RSI: 39.11 | Confirmaciones: RSI en zona de sobreventa         │
+│  (<40)', 'TRX/MXN': 'Precio: 5.7279 | Puntaje Técnico: 1 | RSI: 30.55 |      │
+│  Confirmaciones: RSI en zona de sobreventa (<40)', 'BAT/MXN': 'Precio:       │
+│  1.6839 | Puntaje Técnico: 1 | RSI: 14.61 | Confirmaciones: RSI en zona de   │
+│  sobreventa (<40)', 'ETH/MXN': 'Precio: 39421.0 | Puntaje Técnico: 1 | RSI:  │
+│  37.09 | Confirmaciones: RSI en zona de sobreventa (<40)', 'XRP/MXN':        │
+│  'Precio: 24.2464 | Puntaje Técnico: 1 | RSI: 32.86 | Confirmaciones: RSI    │
+│  en zona de sobreventa (<40)', 'BCH/MXN': 'Precio: 7560.0 | Puntaje          │
+│  Técnico: 1 | RSI: 0.0 | Confirmaciones: RSI en zona de sobreventa (<40)'}.  │
+│  Evalúa y elige 1.                                                           │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  AVAX/MXN RSI en zona de sobreventa.                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Assigned to: Analista Cuantitativo
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07                                  │
+│  Agent: Analista Cuantitativo                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Task: Saldo: $95.34795581 MXN. Taker Fee: 0.78%. Calcula el precio de       │
+│  Breakeven. Adicionalmente, basándote en lo estrecho del % de ganancia de    │
+│  Scalping (y las altas comisiones), evalúa y define de cuánto debería ser    │
+│  la inversión inicial mínima (MXN) para que valga la pena obtener ganancias  │
+│  monetarias.                                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  El Breakeven es $96.34795581 MXN, Veredicto: No es viable, Capital mínimo   │
+│  sugerido: $1000 MXN.                                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Assigned to: Auditor de Comisiones
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1                                  │
+│  Agent: Auditor de Comisiones                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Task: Revisa datos de Analista y Riesgo. Genera la orden inexcusablemente.  │
+│  Siempre debe ser aprobada bajo tu propio riesgo directivo.                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Final Answer:                                                               │
+│  {"simbolo": "AVAX/MXN", "razon": "Sobreventa", "precio_entrada_sugerido":   │
+│  96.34795581, "breakeven_calculado": 96.34795581, "aprobado": false,         │
+│  "inversion_minima_sugerida": 1000.0}                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Assigned to: CEO Final (Generador JSON)
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 30767e4a-7059-4793-b4c4-56fb598d143f                                  │
+│  Agent: CEO Final (Generador JSON)                                           │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── Crew Completion ───────────────────────────────╮
+│                                                                              │
+│  Crew Execution Completed                                                    │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│  Final Output: {"simbolo": "AVAX/MXN", "razon": "Sobreventa",                │
+│  "precio_entrada_sugerido": 96.34795581, "breakeven_calculado":              │
+│  96.34795581, "aprobado": false, "inversion_minima_sugerida": 1000.0}        │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+✅ Propuesta aprobada por Directiva -> AVAX/MXN
+⏳ Propuesta pendiente en Dashboard. Tienes 10 mins para decidir...
+⏭️ Tiempo Agotado o Propuesta Rechazada por el Usuario.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+✅ SOL/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)', 'Incremento inusual de volumen']
+❌ LTC/MXN descartado matemáticamente: Sin señales claras
+✅ AVAX/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ MANA/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ BTC/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)', 'Cruce MACD Alcista detectado']
+❌ TRX/MXN descartado matemáticamente: Sin señales claras
+✅ BAT/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+❌ ETH/MXN descartado matemáticamente: Sin señales claras
+✅ XRP/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ BCH/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+🤖 Despertando IA (CrewAI) para análisis cualitativo final de: ['SOL/MXN', 'AVAX/MXN', 'MANA/MXN', 'BTC/MXN', 'BAT/MXN', 'XRP/MXN', 'BCH/MXN']
+🚀 Iniciando sesión de la Junta Directiva de SaaK Solutions (Estrategia: Hold)...
+╭─────────────────────────── Crew Execution Started ───────────────────────────╮
+│                                                                              │
+│  Crew Execution Started                                                      │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Task: Estrategia: Hold. Activos pre-filtrados (cuantitativamente            │
+│  aprobados): {'SOL/MXN': 'Precio: 1451.37 | Puntaje Técnico: 2 | RSI: 29.8   │
+│  | Confirmaciones: RSI en zona de sobreventa (<40), Incremento inusual de    │
+│  volumen', 'AVAX/MXN': 'Precio: 156.56 | Puntaje Técnico: 1 | RSI: 1.57 |    │
+│  Confirmaciones: RSI en zona de sobreventa (<40)', 'MANA/MXN': 'Precio:      │
+│  1.56 | Puntaje Técnico: 1 | RSI: 28.95 | Confirmaciones: RSI en zona de     │
+│  sobreventa (<40)', 'BTC/MXN': 'Precio: 1288070.0 | Puntaje Técnico: 3 |     │
+│  RSI: 32.58 | Confirmaciones: RSI en zona de sobreventa (<40), Cruce MACD    │
+│  Alcista detectado', 'BAT/MXN': 'Precio: 1.6839 | Puntaje Técnico: 1 | RSI:  │
+│  14.61 | Confirmaciones: RSI en zona de sobreventa (<40)', 'XRP/MXN':        │
+│  'Precio: 24.3171 | Puntaje Técnico: 1 | RSI: 38.69 | Confirmaciones: RSI    │
+│  en zona de sobreventa (<40)', 'BCH/MXN': 'Precio: 7560.0 | Puntaje          │
+│  Técnico: 1 | RSI: 0.0 | Confirmaciones: RSI en zona de sobreventa (<40)'}.  │
+│  Evalúa y elige 1.                                                           │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  BTC/MXN RSI en zona de sobreventa y MACD Alcista                            │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Assigned to: Analista Cuantitativo
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07                                  │
+│  Agent: Analista Cuantitativo                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Task: Saldo: $95.34795581 MXN. Taker Fee: 0.78%. Calcula el precio de       │
+│  Breakeven. Adicionalmente, basándote en lo estrecho del % de ganancia de    │
+│  Scalping (y las altas comisiones), evalúa y define de cuánto debería ser    │
+│  la inversión inicial mínima (MXN) para que valga la pena obtener ganancias  │
+│  monetarias.                                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  El Breakeven neto es $96.34795581 MXN, Veredicto: No es viable, Capital     │
+│  mínimo sugerido: $1000 MXN.                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Assigned to: Auditor de Comisiones
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1                                  │
+│  Agent: Auditor de Comisiones                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Task: Revisa datos de Analista y Riesgo. Genera la orden inexcusablemente.  │
+│  Siempre debe ser aprobada bajo tu propio riesgo directivo.                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Final Answer:                                                               │
+│  {"simbolo": "BTC/MXN", "razon": "Sobreventa", "precio_entrada_sugerido":    │
+│  96.34795581, "breakeven_calculado": 96.34795581, "aprobado": false,         │
+│  "inversion_minima_sugerida": 1000.0}                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Assigned to: CEO Final (Generador JSON)
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 30767e4a-7059-4793-b4c4-56fb598d143f                                  │
+│  Agent: CEO Final (Generador JSON)                                           │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── Crew Completion ───────────────────────────────╮
+│                                                                              │
+│  Crew Execution Completed                                                    │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│  Final Output: {"simbolo": "BTC/MXN", "razon": "Sobreventa",                 │
+│  "precio_entrada_sugerido": 96.34795581, "breakeven_calculado":              │
+│  96.34795581, "aprobado": false, "inversion_minima_sugerida": 1000.0}        │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+✅ Propuesta aprobada por Directiva -> BTC/MXN
+⏳ Propuesta pendiente en Dashboard. Tienes 10 mins para decidir...
+⏭️ Tiempo Agotado o Propuesta Rechazada por el Usuario.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+✅ SOL/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)', 'Cruce MACD Alcista detectado']
+✅ LTC/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)', 'Cruce MACD Alcista detectado']
+✅ AVAX/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ MANA/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)', 'Incremento inusual de volumen']
+✅ BTC/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+❌ TRX/MXN descartado matemáticamente: Sin señales claras
+✅ BAT/MXN SUPERÓ filtros técnicos: ['Cruce MACD Alcista detectado']
+❌ ETH/MXN descartado matemáticamente: Sin señales claras
+❌ XRP/MXN descartado matemáticamente: Sin señales claras
+✅ BCH/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+🤖 Despertando IA (CrewAI) para análisis cualitativo final de: ['SOL/MXN', 'LTC/MXN', 'AVAX/MXN', 'MANA/MXN', 'BTC/MXN', 'BAT/MXN', 'BCH/MXN']
+🚀 Iniciando sesión de la Junta Directiva de SaaK Solutions (Estrategia: Hold)...
+╭─────────────────────────── Crew Execution Started ───────────────────────────╮
+│                                                                              │
+│  Crew Execution Started                                                      │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Task: Estrategia: Hold. Activos pre-filtrados (cuantitativamente            │
+│  aprobados): {'SOL/MXN': 'Precio: 1455.04 | Puntaje Técnico: 3 | RSI: 26.46  │
+│  | Confirmaciones: RSI en zona de sobreventa (<40), Cruce MACD Alcista       │
+│  detectado', 'LTC/MXN': 'Precio: 945.7 | Puntaje Técnico: 3 | RSI: 38.42 |   │
+│  Confirmaciones: RSI en zona de sobreventa (<40), Cruce MACD Alcista         │
+│  detectado', 'AVAX/MXN': 'Precio: 157.69 | Puntaje Técnico: 1 | RSI: 24.04   │
+│  | Confirmaciones: RSI en zona de sobreventa (<40)', 'MANA/MXN': 'Precio:    │
+│  1.56 | Puntaje Técnico: 2 | RSI: 33.33 | Confirmaciones: RSI en zona de     │
+│  sobreventa (<40), Incremento inusual de volumen', 'BTC/MXN': 'Precio:       │
+│  1288060.0 | Puntaje Técnico: 1 | RSI: 39.21 | Confirmaciones: RSI en zona   │
+│  de sobreventa (<40)', 'BAT/MXN': 'Precio: 1.715 | Puntaje Técnico: 2 |      │
+│  RSI: 43.04 | Confirmaciones: Cruce MACD Alcista detectado', 'BCH/MXN':      │
+│  'Precio: 7560.0 | Puntaje Técnico: 1 | RSI: 0.0 | Confirmaciones: RSI en    │
+│  zona de sobreventa (<40)'}. Evalúa y elige 1.                               │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  SOL/MXN RSI en zona de sobreventa y Cruce MACD Alcista.                     │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Assigned to: Analista Cuantitativo
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07                                  │
+│  Agent: Analista Cuantitativo                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Task: Saldo: $95.34795581 MXN. Taker Fee: 0.78%. Calcula el precio de       │
+│  Breakeven. Adicionalmente, basándote en lo estrecho del % de ganancia de    │
+│  Scalping (y las altas comisiones), evalúa y define de cuánto debería ser    │
+│  la inversión inicial mínima (MXN) para que valga la pena obtener ganancias  │
+│  monetarias.                                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  El Breakeven es $96.34795581 MXN, Veredicto: No es viable, Capital mínimo   │
+│  sugerido: $1000 MXN.                                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Assigned to: Auditor de Comisiones
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1                                  │
+│  Agent: Auditor de Comisiones                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Task: Revisa datos de Analista y Riesgo. Genera la orden inexcusablemente.  │
+│  Siempre debe ser aprobada bajo tu propio riesgo directivo.                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Final Answer:                                                               │
+│  {"simbolo": "SOL/MXN", "razon": "Sobreventa", "precio_entrada_sugerido":    │
+│  96.34795581, "breakeven_calculado": 96.34795581, "aprobado": false,         │
+│  "inversion_minima_sugerida": 1000.0}                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Assigned to: CEO Final (Generador JSON)
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 30767e4a-7059-4793-b4c4-56fb598d143f                                  │
+│  Agent: CEO Final (Generador JSON)                                           │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── Crew Completion ───────────────────────────────╮
+│                                                                              │
+│  Crew Execution Completed                                                    │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│  Final Output: {"simbolo": "SOL/MXN", "razon": "Sobreventa",                 │
+│  "precio_entrada_sugerido": 96.34795581, "breakeven_calculado":              │
+│  96.34795581, "aprobado": false, "inversion_minima_sugerida": 1000.0}        │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+✅ Propuesta aprobada por Directiva -> SOL/MXN
+⏳ Propuesta pendiente en Dashboard. Tienes 10 mins para decidir...
+⏭️ Tiempo Agotado o Propuesta Rechazada por el Usuario.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+✅ SOL/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+❌ LTC/MXN descartado matemáticamente: Sin señales claras
+✅ AVAX/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)', 'Cruce MACD Alcista detectado']
+✅ MANA/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+❌ BTC/MXN descartado matemáticamente: Sin señales claras
+✅ TRX/MXN SUPERÓ filtros técnicos: ['Cruce MACD Alcista detectado']
+❌ BAT/MXN descartado matemáticamente: Sin señales claras
+❌ ETH/MXN descartado matemáticamente: Sin señales claras
+✅ XRP/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+✅ BCH/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+🤖 Despertando IA (CrewAI) para análisis cualitativo final de: ['SOL/MXN', 'AVAX/MXN', 'MANA/MXN', 'TRX/MXN', 'XRP/MXN', 'BCH/MXN']
+🚀 Iniciando sesión de la Junta Directiva de SaaK Solutions (Estrategia: Hold)...
+╭─────────────────────────── Crew Execution Started ───────────────────────────╮
+│                                                                              │
+│  Crew Execution Started                                                      │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Task: Estrategia: Hold. Activos pre-filtrados (cuantitativamente            │
+│  aprobados): {'SOL/MXN': 'Precio: 1460.18 | Puntaje Técnico: 1 | RSI: 30.73  │
+│  | Confirmaciones: RSI en zona de sobreventa (<40)', 'AVAX/MXN': 'Precio:    │
+│  157.69 | Puntaje Técnico: 3 | RSI: 24.04 | Confirmaciones: RSI en zona de   │
+│  sobreventa (<40), Cruce MACD Alcista detectado', 'MANA/MXN': 'Precio: 1.56  │
+│  | Puntaje Técnico: 1 | RSI: 28.89 | Confirmaciones: RSI en zona de          │
+│  sobreventa (<40)', 'TRX/MXN': 'Precio: 5.7354 | Puntaje Técnico: 2 | RSI:   │
+│  57.37 | Confirmaciones: Cruce MACD Alcista detectado', 'XRP/MXN': 'Precio:  │
+│  24.4157 | Puntaje Técnico: 1 | RSI: 39.45 | Confirmaciones: RSI en zona de  │
+│  sobreventa (<40)', 'BCH/MXN': 'Precio: 7560.0 | Puntaje Técnico: 1 | RSI:   │
+│  0.0 | Confirmaciones: RSI en zona de sobreventa (<40)'}. Evalúa y elige 1.  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  AVAX/MXN, Cruce MACD Alcista detectado                                      │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Assigned to: Analista Cuantitativo
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07                                  │
+│  Agent: Analista Cuantitativo                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Task: Saldo: $95.34795581 MXN. Taker Fee: 0.78%. Calcula el precio de       │
+│  Breakeven. Adicionalmente, basándote en lo estrecho del % de ganancia de    │
+│  Scalping (y las altas comisiones), evalúa y define de cuánto debería ser    │
+│  la inversión inicial mínima (MXN) para que valga la pena obtener ganancias  │
+│  monetarias.                                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  Breakeven: $95.89, Veredicto: No es viable, Capital mínimo sugerido: $1000  │
+│  MXN                                                                         │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Assigned to: Auditor de Comisiones
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1                                  │
+│  Agent: Auditor de Comisiones                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Task: Revisa datos de Analista y Riesgo. Genera la orden inexcusablemente.  │
+│  Siempre debe ser aprobada bajo tu propio riesgo directivo.                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Final Answer:                                                               │
+│  {"simbolo": "AVAX/MXN", "razon": "Cruce MACD", "precio_entrada_sugerido":   │
+│  95.89, "breakeven_calculado": 95.89, "aprobado": false,                     │
+│  "inversion_minima_sugerida": 1000.0}                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Assigned to: CEO Final (Generador JSON)
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 30767e4a-7059-4793-b4c4-56fb598d143f                                  │
+│  Agent: CEO Final (Generador JSON)                                           │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── Crew Completion ───────────────────────────────╮
+│                                                                              │
+│  Crew Execution Completed                                                    │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│  Final Output: {"simbolo": "AVAX/MXN", "razon": "Cruce MACD",                │
+│  "precio_entrada_sugerido": 95.89, "breakeven_calculado": 95.89,             │
+│  "aprobado": false, "inversion_minima_sugerida": 1000.0}                     │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+✅ Propuesta aprobada por Directiva -> AVAX/MXN
+⏳ Propuesta pendiente en Dashboard. Tienes 10 mins para decidir...
+⏭️ Tiempo Agotado o Propuesta Rechazada por el Usuario.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+❌ SOL/MXN descartado matemáticamente: Sin señales claras
+❌ LTC/MXN descartado matemáticamente: Sin señales claras
+❌ AVAX/MXN descartado matemáticamente: Sin señales claras
+✅ MANA/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+❌ BTC/MXN descartado matemáticamente: Sin señales claras
+❌ TRX/MXN descartado matemáticamente: Sin señales claras
+❌ BAT/MXN descartado matemáticamente: Sin señales claras
+❌ ETH/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ XRP/MXN descartado matemáticamente: Sin señales claras
+✅ BCH/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+🤖 Despertando IA (CrewAI) para análisis cualitativo final de: ['MANA/MXN', 'BCH/MXN']
+🚀 Iniciando sesión de la Junta Directiva de SaaK Solutions (Estrategia: Hold)...
+╭─────────────────────────── Crew Execution Started ───────────────────────────╮
+│                                                                              │
+│  Crew Execution Started                                                      │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Task: Estrategia: Hold. Activos pre-filtrados (cuantitativamente            │
+│  aprobados): {'MANA/MXN': 'Precio: 1.558 | Puntaje Técnico: 1 | RSI: 26.67   │
+│  | Confirmaciones: RSI en zona de sobreventa (<40)', 'BCH/MXN': 'Precio:     │
+│  7560.0 | Puntaje Técnico: 1 | RSI: 0.0 | Confirmaciones: RSI en zona de     │
+│  sobreventa (<40)'}. Evalúa y elige 1.                                       │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  BCH/MXN RSI en zona de sobreventa extrema.                                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Assigned to: Analista Cuantitativo
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07                                  │
+│  Agent: Analista Cuantitativo                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Task: Saldo: $95.34795581 MXN. Taker Fee: 0.78%. Calcula el precio de       │
+│  Breakeven. Adicionalmente, basándote en lo estrecho del % de ganancia de    │
+│  Scalping (y las altas comisiones), evalúa y define de cuánto debería ser    │
+│  la inversión inicial mínima (MXN) para que valga la pena obtener ganancias  │
+│  monetarias.                                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  El Breakeven es $96.34795581 MXN, Veredicto: No es viable, Capital mínimo   │
+│  sugerido: $1000 MXN.                                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Assigned to: Auditor de Comisiones
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1                                  │
+│  Agent: Auditor de Comisiones                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Task: Revisa datos de Analista y Riesgo. Genera la orden inexcusablemente.  │
+│  Siempre debe ser aprobada bajo tu propio riesgo directivo.                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Final Answer:                                                               │
+│  {"simbolo": "BCH/MXN", "razon": "Sobreventa", "precio_entrada_sugerido":    │
+│  96.34795581, "breakeven_calculado": 96.34795581, "aprobado": false,         │
+│  "inversion_minima_sugerida": 1000.0}                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Assigned to: CEO Final (Generador JSON)
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 30767e4a-7059-4793-b4c4-56fb598d143f                                  │
+│  Agent: CEO Final (Generador JSON)                                           │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── Crew Completion ───────────────────────────────╮
+│                                                                              │
+│  Crew Execution Completed                                                    │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│  Final Output: {"simbolo": "BCH/MXN", "razon": "Sobreventa",                 │
+│  "precio_entrada_sugerido": 96.34795581, "breakeven_calculado":              │
+│  96.34795581, "aprobado": false, "inversion_minima_sugerida": 1000.0}        │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+✅ Propuesta aprobada por Directiva -> BCH/MXN
+⏳ Propuesta pendiente en Dashboard. Tienes 10 mins para decidir...
+⏭️ Tiempo Agotado o Propuesta Rechazada por el Usuario.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+❌ SOL/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ LTC/MXN descartado matemáticamente: Sin señales claras
+❌ AVAX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+✅ MANA/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)', 'Incremento inusual de volumen']
+❌ BTC/MXN descartado matemáticamente: Sin señales claras
+❌ TRX/MXN descartado matemáticamente: Sin señales claras
+❌ BAT/MXN descartado matemáticamente: Sin señales claras
+❌ ETH/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ XRP/MXN descartado matemáticamente: Sin señales claras
+❌ BCH/MXN descartado matemáticamente: Sin señales claras
+🤖 Despertando IA (CrewAI) para análisis cualitativo final de: ['MANA/MXN']
+🚀 Iniciando sesión de la Junta Directiva de SaaK Solutions (Estrategia: Hold)...
+╭─────────────────────────── Crew Execution Started ───────────────────────────╮
+│                                                                              │
+│  Crew Execution Started                                                      │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Task: Estrategia: Hold. Activos pre-filtrados (cuantitativamente            │
+│  aprobados): {'MANA/MXN': 'Precio: 1.56 | Puntaje Técnico: 2 | RSI: 28.57 |  │
+│  Confirmaciones: RSI en zona de sobreventa (<40), Incremento inusual de      │
+│  volumen'}. Evalúa y elige 1.                                                │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  MANA/MXN, RSI en zona de sobreventa.                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Assigned to: Analista Cuantitativo
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07                                  │
+│  Agent: Analista Cuantitativo                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Task: Saldo: $95.34795581 MXN. Taker Fee: 0.78%. Calcula el precio de       │
+│  Breakeven. Adicionalmente, basándote en lo estrecho del % de ganancia de    │
+│  Scalping (y las altas comisiones), evalúa y define de cuánto debería ser    │
+│  la inversión inicial mínima (MXN) para que valga la pena obtener ganancias  │
+│  monetarias.                                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  El Breakeven es $96.34795581 MXN, Veredicto: No es viable, Capital mínimo   │
+│  sugerido: $1000 MXN.                                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Assigned to: Auditor de Comisiones
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1                                  │
+│  Agent: Auditor de Comisiones                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Task: Revisa datos de Analista y Riesgo. Genera la orden inexcusablemente.  │
+│  Siempre debe ser aprobada bajo tu propio riesgo directivo.                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Final Answer:                                                               │
+│  {"simbolo": "MANA/MXN", "razon": "Sobreventa", "precio_entrada_sugerido":   │
+│  96.34795581, "breakeven_calculado": 96.34795581, "aprobado": false,         │
+│  "inversion_minima_sugerida": 1000.0}                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Assigned to: CEO Final (Generador JSON)
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 30767e4a-7059-4793-b4c4-56fb598d143f                                  │
+│  Agent: CEO Final (Generador JSON)                                           │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── Crew Completion ───────────────────────────────╮
+│                                                                              │
+│  Crew Execution Completed                                                    │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│  Final Output: {"simbolo": "MANA/MXN", "razon": "Sobreventa",                │
+│  "precio_entrada_sugerido": 96.34795581, "breakeven_calculado":              │
+│  96.34795581, "aprobado": false, "inversion_minima_sugerida": 1000.0}        │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+✅ Propuesta aprobada por Directiva -> MANA/MXN
+⏳ Propuesta pendiente en Dashboard. Tienes 10 mins para decidir...
+⏭️ Tiempo Agotado o Propuesta Rechazada por el Usuario.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+❌ SOL/MXN descartado matemáticamente: Sin señales claras
+❌ LTC/MXN descartado matemáticamente: Sin señales claras
+❌ AVAX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+✅ MANA/MXN SUPERÓ filtros técnicos: ['RSI en zona de sobreventa (<40)']
+❌ BTC/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ TRX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ BAT/MXN descartado matemáticamente: Sin señales claras
+❌ ETH/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ XRP/MXN descartado matemáticamente: Sin señales claras
+❌ BCH/MXN descartado matemáticamente: Sin señales claras
+🤖 Despertando IA (CrewAI) para análisis cualitativo final de: ['MANA/MXN']
+🚀 Iniciando sesión de la Junta Directiva de SaaK Solutions (Estrategia: Hold)...
+╭─────────────────────────── Crew Execution Started ───────────────────────────╮
+│                                                                              │
+│  Crew Execution Started                                                      │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Task: Estrategia: Hold. Activos pre-filtrados (cuantitativamente            │
+│  aprobados): {'MANA/MXN': 'Precio: 1.56 | Puntaje Técnico: 1 | RSI: 30.77 |  │
+│  Confirmaciones: RSI en zona de sobreventa (<40)'}. Evalúa y elige 1.        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Analista Cuantitativo                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  MANA/MXN, RSI en zona de sobreventa.                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+└── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+    Assigned to: Analista Cuantitativo
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07                                  │
+│  Agent: Analista Cuantitativo                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Task: Saldo: $95.34795581 MXN. Taker Fee: 0.78%. Calcula el precio de       │
+│  Breakeven. Adicionalmente, basándote en lo estrecho del % de ganancia de    │
+│  Scalping (y las altas comisiones), evalúa y define de cuánto debería ser    │
+│  la inversión inicial mínima (MXN) para que valga la pena obtener ganancias  │
+│  monetarias.                                                                 │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: Auditor de Comisiones                                                │
+│                                                                              │
+│  Final Answer:                                                               │
+│  El Breakeven es $95.95 MXN, Veredicto: No es viable, Capital mínimo         │
+│  sugerido: $1000 MXN.                                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+└── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+    Assigned to: Auditor de Comisiones
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1                                  │
+│  Agent: Auditor de Comisiones                                                │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭────────────────────────────── 🤖 Agent Started ──────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Task: Revisa datos de Analista y Riesgo. Genera la orden inexcusablemente.  │
+│  Siempre debe ser aprobada bajo tu propio riesgo directivo.                  │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Status: Executing Task...╭─────────────────────────── ✅ Agent Final Answer ────────────────────────────╮
+│                                                                              │
+│  Agent: CEO Final (Generador JSON)                                           │
+│                                                                              │
+│  Final Answer:                                                               │
+│  {"simbolo": "MANA/MXN", "razon": "Sobreventa", "precio_entrada_sugerido":   │
+│  95.95, "breakeven_calculado": 95.95, "aprobado": false,                     │
+│  "inversion_minima_sugerida": 1000.0}                                        │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+🚀 Crew: crew
+├── 📋 Task: 4d0dba5d-08e0-4fc8-93f9-11bc59d35b07
+│   Assigned to: Analista Cuantitativo
+│   Status: ✅ Completed
+├── 📋 Task: 73f74aa1-dae0-49ec-ae79-dde77fcd39a1
+│   Assigned to: Auditor de Comisiones
+│   Status: ✅ Completed
+└── 📋 Task: 30767e4a-7059-4793-b4c4-56fb598d143f
+    Assigned to: CEO Final (Generador JSON)
+    Status: ✅ Completed╭────────────────────────────── Task Completion ───────────────────────────────╮
+│                                                                              │
+│  Task Completed                                                              │
+│  Name: 30767e4a-7059-4793-b4c4-56fb598d143f                                  │
+│  Agent: CEO Final (Generador JSON)                                           │
+│  Tool Args:                                                                  │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+╭────────────────────────────── Crew Completion ───────────────────────────────╮
+│                                                                              │
+│  Crew Execution Completed                                                    │
+│  Name: crew                                                                  │
+│  ID: 064f0fee-069b-4b02-a247-99cc65d276d1                                    │
+│  Tool Args:                                                                  │
+│  Final Output: {"simbolo": "MANA/MXN", "razon": "Sobreventa",                │
+│  "precio_entrada_sugerido": 95.95, "breakeven_calculado": 95.95,             │
+│  "aprobado": false, "inversion_minima_sugerida": 1000.0}                     │
+│                                                                              │
+│                                                                              │
+╰──────────────────────────────────────────────────────────────────────────────╯
+
+✅ Propuesta aprobada por Directiva -> MANA/MXN
+⏳ Propuesta pendiente en Dashboard. Tienes 10 mins para decidir...
+⏭️ Tiempo Agotado o Propuesta Rechazada por el Usuario.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+❌ SOL/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ LTC/MXN descartado matemáticamente: Sin señales claras
+❌ AVAX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ MANA/MXN descartado matemáticamente: Sin señales claras
+❌ BTC/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ TRX/MXN descartado matemáticamente: ['RSI alto, cuidado', 'Incremento inusual de volumen']
+❌ BAT/MXN descartado matemáticamente: Sin señales claras
+❌ ETH/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ XRP/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ BCH/MXN descartado matemáticamente: Sin señales claras
+⚠️ Ningún activo superó los filtros cuantitativos estrictos. IA en pausa para ahorrar procesamiento y tokens.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+❌ SOL/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ LTC/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ AVAX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ MANA/MXN descartado matemáticamente: Sin señales claras
+❌ BTC/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ TRX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ BAT/MXN descartado matemáticamente: Sin señales claras
+❌ ETH/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ XRP/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ BCH/MXN descartado matemáticamente: Sin señales claras
+⚠️ Ningún activo superó los filtros cuantitativos estrictos. IA en pausa para ahorrar procesamiento y tokens.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+❌ SOL/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ LTC/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ AVAX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ MANA/MXN descartado matemáticamente: Sin señales claras
+❌ BTC/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ TRX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ BAT/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ ETH/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ XRP/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ BCH/MXN descartado matemáticamente: Sin señales claras
+⚠️ Ningún activo superó los filtros cuantitativos estrictos. IA en pausa para ahorrar procesamiento y tokens.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)
+
+🧠 [Filtro Cuantitativo] Evaluando mercado (Capital Disp: $95.35) (Estrategia: Hold)
+❌ SOL/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ LTC/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ AVAX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ MANA/MXN descartado matemáticamente: Sin señales claras
+❌ BTC/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ TRX/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ BAT/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ ETH/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ XRP/MXN descartado matemáticamente: ['RSI alto, cuidado']
+❌ BCH/MXN descartado matemáticamente: Sin señales claras
+⚠️ Ningún activo superó los filtros cuantitativos estrictos. IA en pausa para ahorrar procesamiento y tokens.
+💤 Junta Directiva esperando 15 minutos para próxima evaluación global de mercado... (Escuchando cambios manuales)

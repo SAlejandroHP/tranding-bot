@@ -2,8 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { supabase } from '../services/supabaseClient';
 import { GROQ_URL, GROQ_MODEL, GROQ_API_KEY } from '../config/env';
 
-import NavIsland from '../components/NavIsland';
-import SaakTutor from '../components/SaakTutor';
+import MainLayout from '../layouts/MainLayout';
 import ProposalCard from '../components/ProposalCard';
 import TypewriterText from '../components/TypewriterText';
 
@@ -198,7 +197,7 @@ const Dashboard = ({ onLogout }) => {
   };
 
   return (
-    <>
+    <MainLayout isOnline={isOnline} onLogout={onLogout}>
       {showProdModal && (
         <div className="modal-overlay" style={{position: 'fixed', top:0, left:0, right:0, bottom:0, background: 'rgba(0,0,0,0.85)', backdropFilter: 'blur(10px)', zIndex: 9999, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
           <div className="modal-content" style={{background: '#0d0d0d', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: '16px', padding: '2rem', maxWidth: '400px', width: '90%', boxShadow: '0 25px 50px -12px rgba(239, 68, 68, 0.25)'}}>
@@ -238,13 +237,6 @@ const Dashboard = ({ onLogout }) => {
           </div>
         </div>
       )}
-      <div className="orb orb-emerald"></div>
-      <div className="orb orb-gold"></div>
-      <div className="orb orb-blue"></div>
-      
-      <NavIsland isOnline={isOnline} onLogout={onLogout} />
-      
-      <SaakTutor />
 
       <div className="dashboard-container">
         
@@ -421,14 +413,14 @@ const Dashboard = ({ onLogout }) => {
           </div>
 
           {/* ROW 2: Proposals & Terminal */}
-          <div className="bento-card col-span-6" style={{ minHeight: '340px' }}>
-            <div className="card-header">
+          <div className="bento-card col-span-6" style={{ height: '400px', display: 'flex', flexDirection: 'column' }}>
+            <div className="card-header" style={{ flexShrink: 0 }}>
               <span><span className="icon">⟁</span> Propuestas IA</span>
               <span className="dev-badge">{propuestas.length} ACTIVAS</span>
             </div>
             
             {propuestas.length > 0 ? (
-              <div className="proposals-container">
+              <div className="proposals-container" style={{ flex: 1, overflowY: 'auto' }}>
                 {propuestas.map(p => (
                   <ProposalCard 
                     key={p.id} proposal={p} estrategiaActiva={botStatus?.estrategia_activa}
@@ -443,11 +435,11 @@ const Dashboard = ({ onLogout }) => {
             )}
           </div>
 
-          <div className="bento-card col-span-6" style={{ minHeight: '340px' }}>
-             <div className="card-header">
+          <div className="bento-card col-span-6" style={{ height: '400px', display: 'flex', flexDirection: 'column' }}>
+             <div className="card-header" style={{ flexShrink: 0 }}>
               <span><span className="icon">_</span> Consola de Operaciones</span>
             </div>
-            <div className="terminal-window" style={{ display: 'flex', flexDirection: 'column' }}>
+            <div className="terminal-window" style={{ display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0, overflow: 'hidden' }}>
                <div className="terminal-top-bar" style={{ flexShrink: 0 }}>
                  <div className="t-dot t-red"></div>
                  <div className="t-dot t-yel"></div>
@@ -551,7 +543,7 @@ const Dashboard = ({ onLogout }) => {
 
         </main>
       </div>
-    </>
+    </MainLayout>
   );
 };
 

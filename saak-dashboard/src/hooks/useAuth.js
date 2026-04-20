@@ -1,11 +1,41 @@
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { authService } from '../services/authService';
+import { supabase } from '../services/supabaseClient';
 
 export const useAuth = () => {
   const [isLogged, setIsLogged] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [isInitializing, setIsInitializing] = useState(true);
   const [error, setError] = useState(null);
   const [step, setStep] = useState(1);
+
+  useEffect(() => {
+    const checkSession = async () => {
+      try {
+        const { data: { session } } = await supabase.auth.getSession();
+        if (session) {
+          setIsLogged(true);
+        }
+      } catch (err) {
+        console.error("No se pudo obtener la sesión previa", err);
+      } finally {
+        setIsInitializing(false);
+      }
+    };
+    checkSession();
+
+    const { data: authListener } = supabase.auth.onAuthStateChange((event, session) => {
+      if (session) {
+        setIsLogged(true);
+      } else {
+        setIsLogged(false);
+      }
+    });
+
+    return () => {
+      authListener?.subscription.unsubscribe();
+    };
+  }, []);
 
   const requestLoginCode = useCallback(async (email) => {
     setLoading(true);
@@ -30,7 +60,7 @@ export const useAuth = () => {
     try {
       const response = await authService.verifyCode(email, code);
       if (response.success) {
-        setIsLogged(true);
+        setIsLogged(true); // The auth listener will also catch this
       } else {
         setError(response.error || 'Código incorrecto');
       }
@@ -47,8 +77,9 @@ export const useAuth = () => {
     setIsLogged(false);
     setStep(1);
     setLoading(false);
-    window.location.reload();
+    // Reload shouldn't be strictly necessary if state is managed, but kept for safe reset
+    window.location.reload(); 
   }, []);
 
-  return { isLogged, step, requestLoginCode, verifyLoginCode, logout, loading, error };
+  return { isLogged, step, requestLoginCode, verifyLoginCode, logout, loading, error, isInitializing };
 };

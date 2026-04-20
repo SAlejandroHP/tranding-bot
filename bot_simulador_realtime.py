@@ -359,23 +359,40 @@ class SaakBotManager:
                 
             with self.lock:
                 
-                # Sincronización Viva de Inyecciones de Capital Externo
+                # Sincronización Viva con Producción y Detección de Inyecciones
                 try:
                     balance = self.exchange.fetch_balance()
                     saldo_real_vivo = float(balance.get('MXN', {}).get('free', 0.0))
-                    # Si el saldo MXN en la API superó lo que el bot recordaba, hubo depósito
-                    if saldo_real_vivo > getattr(self, 'ultimo_saldo_bitso_real', -1.0):
-                        if getattr(self, 'ultimo_saldo_bitso_real', -1.0) != -1.0:
-                            inyeccion_nueva = saldo_real_vivo - self.ultimo_saldo_bitso_real
-                            if inyeccion_nueva > 1.0:
-                                self.capital_mxn += inyeccion_nueva
+                    
+                    modo_produccion = False
+                    try:
+                        bs = self.db.get_bot_status()
+                        if bs and bs.data:
+                            modo_produccion = bs.data[0].get('modo_produccion', False)
+                    except: pass
+
+                    if modo_produccion:
+                        # EN MODO PRODUCCIÓN: El saldo real del exchange es la ley suprema. 
+                        # Así evitamos doble contabilidad al vender (ya que Bitso naturalmente incrementará su free balance)
+                        if abs(saldo_real_vivo - getattr(self, 'ultimo_saldo_bitso_real', -1.0)) > 2.0 and getattr(self, 'ultimo_saldo_bitso_real', -1.0) != -1.0:
+                            print(f"\n💰 [SYSTEM] Ajuste estricto de cuenta real: Bitso reporta ${saldo_real_vivo:,.2f} MXN líquidos.")
+                        self.capital_mxn = saldo_real_vivo
+                        self.ultimo_saldo_bitso_real = saldo_real_vivo
+                    else:
+                        # MODO SIMULACIÓN: Las ventas aumentan capital_mxn virtualmente. 
+                        # Sólo si el salto en Bitso real es > a 1.0 asumimos que el humano depositó físicamente fiat.
+                        if saldo_real_vivo > getattr(self, 'ultimo_saldo_bitso_real', -1.0):
+                            if getattr(self, 'ultimo_saldo_bitso_real', -1.0) != -1.0:
+                                inyeccion_nueva = saldo_real_vivo - self.ultimo_saldo_bitso_real
+                                if inyeccion_nueva > 1.0:
+                                    self.capital_mxn += inyeccion_nueva
+                                    self.ultimo_saldo_bitso_real = saldo_real_vivo
+                                    print(f"\n💰 [SYSTEM] ¡Inyección externa simulada detectada! +${inyeccion_nueva:,.2f} MXN.")
+                                    self._analisis_capital_inicial_ia()
+                            else:
                                 self.ultimo_saldo_bitso_real = saldo_real_vivo
-                                print(f"\n💰 [SYSTEM] ¡Inyección externa detectada! +${inyeccion_nueva:,.2f} MXN adicionales en tu cuenta liquida de Bitso.")
-                                self._analisis_capital_inicial_ia()
                         else:
                             self.ultimo_saldo_bitso_real = saldo_real_vivo
-                    else:
-                        self.ultimo_saldo_bitso_real = saldo_real_vivo
                 except Exception:
                     pass
 
